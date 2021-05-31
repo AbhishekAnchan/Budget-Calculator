@@ -1,0 +1,52 @@
+.header{
+    display: flex;
+    height: 4rem;
+    background-image: linear-gradient(90deg, #0095f8, #52d4ff);
+    align-items: center;
+    justify-content: center;
+}
+
+.header-title{
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.display{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.display-text{
+    color: #09ff00;
+    font-size: 4rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.container{
+    margin: 5px 15rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    text-align: center;
+}
+
+.income{
+    color: #06b900;
+}
+
+.expenses{
+    color:#fb0000;
+}
+
+.subtitle{
+    font-weight: 500;
+}
+
+.color-negative{
+    color:#ff4646;
+}

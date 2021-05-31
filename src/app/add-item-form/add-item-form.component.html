@@ -1,0 +1,7 @@
+<div class="container">
+    <form #budgetForm = "ngForm" (ngSubmit) = onSubmit(budgetForm.value)>
+        <input required class="amount-field" type="number" name="amount" placeholder="Amount" ngModel>
+        <input required class="description-field" type="text" name="description" placeholder="Description" ngModel>
+        <button class="add-button" type="submit" [disabled] = "!budgetForm.valid">Add</button>
+    </form>
+</div>

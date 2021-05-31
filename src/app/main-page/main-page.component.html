@@ -1,0 +1,34 @@
+<div class="header">
+    <h2 class="header-title">BUDGET CALCULATOR</h2>
+</div>
+
+<div class="display">
+    <h1 class="display-text" 
+        [ngClass] = "{'color-negative': totalBudget < 0}">
+        {{totalBudget}}
+    </h1>
+</div>
+
+<app-add-item-form (dataEvent) = "recieveData($event)"></app-add-item-form>
+
+<div class="container">
+    <div class="income">
+        <h3 class="subtitle">INCOME</h3>
+        <div *ngFor = "let item of budgetList; index as i">
+            <app-item-card *ngIf = "item.amount >= 0" 
+                [itemData] = "item" [isIncome] = "true" [idx] = "i"
+                (indexEvent) = "recieveIndex($event)">
+            </app-item-card>  
+        </div>
+    </div>
+
+    <div class="expenses">
+        <h3 class="subtitle">EXPENSES</h3>
+        <div *ngFor = "let item of budgetList; index as i">
+            <app-item-card *ngIf = "item.amount < 0" 
+                [itemData] = "item" [isIncome] = "false" [idx] = "i"
+                (indexEvent) = "recieveIndex($event)">
+            </app-item-card>  
+        </div>
+    </div>
+</div>

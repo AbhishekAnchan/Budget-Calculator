@@ -1,0 +1,53 @@
+.container{ 
+    text-align: left;  
+    display: flex;
+    background-color: #e9e7e7;
+    height: 25px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    position: relative;
+}
+
+.container:hover{
+    background-color: #dddada; 
+}
+
+.description{
+    font-weight: 300;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.amount{
+    font-weight: 300;
+    width: 80px;
+    margin: 0; 
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 0 3px 3px 0;
+    color: white;
+}
+
+.amount-income-bg{
+    background-color: #09ff00;
+}
+
+.amount-expense-bg{
+    background-color: #ff4646;
+}
+
+.icon{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    color: #ff0404;
+    transition: 0.2s ease-in;
+}
+
+.icon:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}

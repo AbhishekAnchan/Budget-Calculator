@@ -1,0 +1,12 @@
+<div class="container" (mouseover)="hover=true" (mouseleave)="hover=false">
+    <p class="description">{{itemData.description}}</p>
+    <p class="amount" 
+        [ngClass] = "{'amount-income-bg': isIncome, 'amount-expense-bg': !isIncome}">
+        {{itemData.amount}}
+    </p>
+    <i class="fas fa-times-circle icon" 
+        [ngStyle]="{display: hover==true  ? 'unset' : 'none' }"
+        (click) = deleteItem()>
+    </i>
+</div>
+

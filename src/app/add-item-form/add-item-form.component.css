@@ -1,0 +1,40 @@
+.container{
+    margin: 1rem 15rem;
+}
+
+.amount-field{
+    width: 100px;
+    height: 25px;
+    margin-right: 5px;
+    border: none;
+    background-color: #e9e7e7;
+    border-radius: 3px;
+}
+
+.description-field{
+    width: 65%;
+    height: 25px;
+    margin-right: 5px;
+    border: none;
+    background-color: #e9e7e7;
+    border-radius: 3px;
+}
+
+.add-button{
+    width:15%;
+    float: right;
+    height: 27px;
+    color: white;
+    border: none;
+    background-color: blueviolet;
+    border-radius: 3px;
+}
+
+.add-button:hover{
+    background-color: #a03aff;
+    cursor: pointer;
+}
+
+.add-button:active{
+    transform: scale(0.98);
+}
