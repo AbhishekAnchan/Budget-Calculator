@@ -1,10 +1,10 @@
 .container{
-    margin: 1rem 15rem;
+    margin: 2rem 15rem;
 }
 
 .amount-field{
     width: 100px;
-    height: 25px;
+    height: 30px;
     margin-right: 5px;
     border: none;
     background-color: #e9e7e7;
@@ -13,7 +13,7 @@
 
 .description-field{
     width: 65%;
-    height: 25px;
+    height: 30px;
     margin-right: 5px;
     border: none;
     background-color: #e9e7e7;
@@ -23,7 +23,7 @@
 .add-button{
     width:15%;
     float: right;
-    height: 27px;
+    height: 32px;
     color: white;
     border: none;
     background-color: blueviolet;

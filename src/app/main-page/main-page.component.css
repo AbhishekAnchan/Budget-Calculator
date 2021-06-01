@@ -14,6 +14,7 @@
 }
 
 .display{
+    height: 15rem;
     background-color: black;
     display: flex;
     align-items: center;
@@ -22,13 +23,13 @@
 
 .display-text{
     color: #09ff00;
-    font-size: 4rem;
+    font-size: 6rem;
     font-weight: 500;
     letter-spacing: 2px;
 }
 
 .container{
-    margin: 5px 15rem;
+    margin: 3rem 15rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 20px;
